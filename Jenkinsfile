@@ -24,7 +24,7 @@ pipeline {
             }
         }
         stage("Jar Publish") {
-        steps {
+         steps {
             script {
                     echo '<--------------- Jar Publish Started --------------->'
                      def server = Artifactory.newServer url:registry+"/artifactory" ,  credentialsId:"jfrog-cred"
